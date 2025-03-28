@@ -12,6 +12,7 @@ const TopicNavigator = ({ topics, selectedTopic, onSelectTopic }) => {
             key={topic.id}
             className={`topic-item ${selectedTopic?.id === topic.id ? 'selected' : ''}`}
             onClick={() => onSelectTopic(topic)}
+            data-testid={`topic-item-${topic.id}`}
           >
             <span className="topic-icon">{topic.icon}</span>
             <div className="topic-info">

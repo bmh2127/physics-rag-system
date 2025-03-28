@@ -15,6 +15,8 @@ const QuestionAnswering = ({ onAskQuestion, selectedTopic }) => {
     try {
       const result = await onAskQuestion(selectedTopic.id, query);
       setAnswer(result);
+      // Reset the query field after asking
+      setQuery('');
     } catch (error) {
       setAnswer({
         message: 'Failed to get an answer. Please try again.',
@@ -36,19 +38,24 @@ const QuestionAnswering = ({ onAskQuestion, selectedTopic }) => {
           value={query}
           onChange={(e) => setQuery(e.target.value)}
           onKeyDown={(e) => e.key === 'Enter' && handleAskQuestion()}
+          data-testid="question-input"
         />
         <button 
           className="ask-button"
           onClick={handleAskQuestion}
           disabled={loading}
+          data-testid="ask-button"
         >
-          {loading ? <RotateCcw className="loading-icon" size={18} /> : <Lightbulb size={18} />}
+          {loading ? <RotateCcw data-testid="loading-icon" className="loading-icon" size={18} /> : <Lightbulb data-testid="lightbulb-icon" size={18} />}
           Ask
         </button>
       </div>
       
       {answer && (
-        <div className={`answer-container ${answer.type || 'info'}`}>
+        <div 
+          className={`answer-container ${answer.type || 'info'}`}
+          data-testid="answer-container"
+        >
           <p className="answer-text">{answer.message}</p>
           {answer.source && <p className="answer-source">Source: {answer.source}</p>}
         </div>

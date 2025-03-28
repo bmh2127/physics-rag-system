@@ -1,5 +1,6 @@
+// App.js
 import React from 'react';
-import PhysicsRagApp from './components/PhysicsRagApp';
+import PhysicsRagApp from './components/PhysicsRagApp/PhysicsRagApp';
 import './App.css';
 
 function App() {

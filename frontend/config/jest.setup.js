@@ -1,4 +1,4 @@
-// src/setupTests.js
+// jest.setup.js
 import '@testing-library/jest-dom';
 
 // Mock Lucide icons globally
@@ -14,13 +14,4 @@ jest.mock('lucide-react', () => ({
   Sun: () => <div data-testid="icon-sun">SunIcon</div>,
   X: () => <div data-testid="icon-x">XIcon</div>,
   BookOpen: () => <div data-testid="icon-book-open">BookOpenIcon</div>
-}));
-// Mock axios
-jest.mock('axios', () => ({
-  create: jest.fn(() => ({
-    get: jest.fn().mockResolvedValue({ data: {} }),
-    post: jest.fn().mockResolvedValue({ data: {} }),
-    put: jest.fn().mockResolvedValue({ data: {} }),
-    delete: jest.fn().mockResolvedValue({ data: {} }),
-  }))
 }));

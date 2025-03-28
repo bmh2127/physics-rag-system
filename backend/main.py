@@ -49,8 +49,8 @@ class HealthCheck(BaseModel):
 def get_rag_system():
     abacus_client = AbacusRagClient(ABACUS_API_KEY)
     rag_system = PhysicsRagSystem(abacus_client)
-    # Initialize only if we have document retrievers (in production)
-    # rag_system.initialize_document_retrievers()
+    # Initialize document retrievers
+    rag_system.initialize_document_retrievers()
     return rag_system
 
 # Health check endpoint

@@ -1,0 +1,147 @@
+/* PracticeProblem.css */
+.practice-problem {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    width: 100%;
+  }
+  
+  .problem-header {
+    margin-bottom: 1rem;
+  }
+  
+  .problem-number {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #1e40af;
+  }
+  
+  .problem-content {
+    background-color: #eff6ff;
+    padding: 1rem;
+    border-radius: 6px;
+    margin-bottom: 1.5rem;
+  }
+  
+  .problem-text {
+    line-height: 1.6;
+  }
+  
+  .answer-section {
+    margin-bottom: 1.5rem;
+  }
+  
+  .answer-label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+  }
+  
+  .answer-textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    resize: vertical;
+    font-family: inherit;
+    font-size: 1rem;
+  }
+  
+  .problem-actions {
+    display: flex;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+  }
+  
+  .grade-button {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.25rem;
+    background-color: #059669;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .grade-button:hover {
+    background-color: #047857;
+  }
+  
+  .grade-button:disabled {
+    background-color: #9ca3af;
+    cursor: not-allowed;
+  }
+  
+  .next-button {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.25rem;
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .next-button:hover {
+    background-color: #1d4ed8;
+  }
+  
+  .loading-icon {
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  .feedback-container {
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 6px;
+  }
+  
+  .feedback-container.info {
+    background-color: #dbeafe;
+    border-left: 4px solid #2563eb;
+  }
+  
+  .feedback-container.success {
+    background-color: #d1fae5;
+    border-left: 4px solid #059669;
+  }
+  
+  .feedback-container.error {
+    background-color: #fee2e2;
+    border-left: 4px solid #dc2626;
+  }
+  
+  .feedback-container.warning {
+    background-color: #fef3c7;
+    border-left: 4px solid #d97706;
+  }
+  
+  .score-display {
+    margin-bottom: 0.5rem;
+    font-size: 1.125rem;
+  }
+  
+  .feedback-text {
+    margin-bottom: 0.75rem;
+    line-height: 1.5;
+  }
+  
+  .solution-section {
+    margin-top: 1rem;
+    padding-top: 0.75rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+  }
