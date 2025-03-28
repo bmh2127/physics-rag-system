@@ -1,0 +1,273 @@
+.app-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 1rem;
+    background-color: #f9fafb;
+  }
+  
+  .header {
+    margin-bottom: 1.5rem;
+  }
+  
+  .header h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #1e40af;
+  }
+  
+  .header p {
+    font-size: 1.125rem;
+    color: #4b5563;
+  }
+  
+  .main-content {
+    display: flex;
+    flex: 1;
+    gap: 1.5rem;
+  }
+  
+  .sidebar {
+    width: 16rem;
+    background-color: white;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  .search-box {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .search-input {
+    flex: 1;
+    padding: 0.5rem;
+    border: 1px solid #d1d5db;
+    border-radius: 0.25rem;
+  }
+  
+  .search-button {
+    padding: 0.5rem;
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+  }
+  
+  .topic-list h2 {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .topic-item {
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+  
+  .topic-item:hover {
+    background-color: #f3f4f6;
+  }
+  
+  .topic-item.selected {
+    background-color: #dbeafe;
+    border-left: 4px solid #2563eb;
+  }
+  
+  .topic-icon {
+    margin-right: 0.5rem;
+  }
+  
+  .content-area {
+    flex: 1;
+    background-color: white;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  .topic-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+  }
+  
+  .topic-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #1e40af;
+  }
+  
+  .mode-buttons {
+    display: flex;
+    gap: 0.5rem;
+  }
+  
+  .mode-button {
+    padding: 0.25rem 0.75rem;
+    border-radius: 0.25rem;
+    display: flex;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+    background-color: #e5e7eb;
+  }
+  
+  .mode-button.active {
+    background-color: #2563eb;
+    color: white;
+  }
+  
+  .mode-button-icon {
+    margin-right: 0.25rem;
+  }
+  
+  .topic-content {
+    margin-bottom: 1rem;
+    line-height: 1.5;
+  }
+  
+  .question-section {
+    margin-top: 1rem;
+  }
+  
+  .question-section h3 {
+    font-size: 1.125rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .question-input {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .question-input input {
+    flex: 1;
+    padding: 0.5rem;
+    border: 1px solid #d1d5db;
+    border-radius: 0.25rem;
+  }
+  
+  .question-button {
+    padding: 0.5rem 1rem;
+    background-color: #059669;
+    color: white;
+    border: none;
+    border-radius: 0.25rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .feedback {
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+  }
+  
+  .feedback.info {
+    background-color: #dbeafe;
+  }
+  
+  .feedback.success {
+    background-color: #d1fae5;
+  }
+  
+  .feedback.error {
+    background-color: #fee2e2;
+  }
+  
+  .feedback.warning {
+    background-color: #fef3c7;
+  }
+  
+  .problem {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    background-color: #eff6ff;
+    border-radius: 0.5rem;
+  }
+  
+  .problem h3 {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .answer-area {
+    margin-bottom: 1rem;
+  }
+  
+  .answer-area label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+  }
+  
+  .answer-textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #d1d5db;
+    border-radius: 0.25rem;
+  }
+  
+  .action-buttons {
+    display: flex;
+    gap: 0.5rem;
+  }
+  
+  .grade-button {
+    padding: 0.5rem 1rem;
+    background-color: #059669;
+    color: white;
+    border: none;
+    border-radius: 0.25rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .next-button {
+    padding: 0.5rem 1rem;
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 0.25rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .loading {
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .empty-state {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #6b7280;
+  }
+  
+  .empty-icon {
+    margin-bottom: 1rem;
+    opacity: 0.5;
+  }
